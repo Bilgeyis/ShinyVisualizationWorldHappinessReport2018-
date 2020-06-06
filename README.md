@@ -3,6 +3,8 @@ Welcome to the World Happiness Index Report Repository!
 This repository was created fully on R and displayed as an interactive application by Shiny. It contains information as well as reactive programming from the information of the World Happiness Report 2019 published on: https://worldhappiness.report/ed/2019/
 
 The present repository contains 6 files apart from this READ ME:
+
+
 •	Chapter2OnlineData.xls: Containing the information of the World Happiness Index Report
 •	dataprep.R: The R script with the data construction instructions
 •	happy2015.csv: A csv file containing the match of countries and regions
