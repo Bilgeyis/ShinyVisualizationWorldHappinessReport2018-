@@ -17,7 +17,7 @@ library(tidyverse)
 library(gganimate)
 library(gifski)
 library(png)
-# 
+
 
 population <- read_excel("melt.xls", skip = 2)
 as.data.frame(population)
@@ -35,28 +35,7 @@ data<-read_excel("Chapter2OnlineData.xls")
 
 happy <- read.csv("happy2015.csv")
 
-# happy<-read_csv(url(urlfile))
-# 
-# setwd("C:/Users/user/Desktop/classes/sem4/reproducible_research/project")
-# 
-# 
-# 
-# #Loading the first dataframe: population from World Bankl 1960-2018
-# 
-# population <- read_excel("C:/Users/user/Desktop/classes/sem4/reproducible_research/project/melt.xls", skip = 2)
-# as.data.frame(population)
-# 
-# #Melting the dataframe population to get panel data of the years
-# 
-# population2<-reshape2::melt(population, id= c ("Country Name",  "Country Code", "Indicator Name" ,"Indicator Code"))
-# 
-# #Loading the second dataframe, which is our main dataframe: information was downloaded from the World Happiness Report, 2018
-# 
-# data<-read_excel("C:/Users/user/Desktop/classes/sem4/reproducible_research/project/Chapter2OnlineData.xls")
-# 
-# 
-# #Loading the third dataframe: happy, that links countries with regions
-# happy <- read.csv("C:/Users/user/Desktop/classes/sem4/reproducible_research/project/happy2015.csv")
+
 
 
 #Renaming the heterogeneous names in both dataframes and ordering by country name 
@@ -218,15 +197,5 @@ ch3
 ch4 = unique(total$Year)
 
 ch<-unique(regions$Region)
-
-#total[ch3[1]]
-#total$Year
-#ggplot(data = all_countries %>% filter(Region %in% "Western Europe"), mapping = aes(x = long, y = lat, group = group)) + 
- # geom_polygon(aes(fill = `Life Ladder`), colour = "black") +
-  #scale_fill_distiller(palette ="YlOrRd", direction = -1) + 
-  #ggtitle("Life Ladder Indext (LLI) for 2017") +
-  #plain +
-  #geom_text(data= happySubset_17test %>% filter(Region %in% "Western Europe"),aes(x= mean_long, y= mean_lat, label= Country_name),
-   #         color = "black", check_overlap = TRUE, size = 3, hjust = 0) 
 
 
