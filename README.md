@@ -13,5 +13,9 @@ The present repository contains 6 files apart from this READ ME:
 It is important to state that in the codes, you will be able to see a section containing a streamgraph, that is a type of graph that contains a bug as it is not yet available from the CRAN mirror in R. However, if managed manually on R it is possible to show this graph. 
 Finally dear R users:
 You can call the application through R studio using the following code:
+
+
 library(shiny)
+
+
 runGitHub("Bilgeyis/ShinyVisualizationWorldHappinessReport2018-", "rstudio")
