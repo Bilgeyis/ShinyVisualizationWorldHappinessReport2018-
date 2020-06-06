@@ -98,6 +98,9 @@ shinyUI(fluidPage(
                 Feel free to select the year you are interested in as well as the variable.")
     ),
     
+    # The streamgraph function is not supported by all versions of RStudio. Therefore, the following lines are commented. They can 
+    # create problems when trying to run an application directly in local computer. 
+    
     # tabPanel('Streamgraph',
     #          titlePanel('Streamgraph of Generosity Perception'),
     #          br(),
@@ -136,11 +139,7 @@ shinyUI(fluidPage(
                                    "GINI index (World Bank estimate), average 2000-16","Social support","Population")),
              plotOutput('regression_combined'))
     
-    #,tabPanel('Chart Race',
-            # titlePanel("Bar chart race"),
-             #imageOutput('bar_chart_race'),
-            # br(),
-           # br())
+
     
     )))
 
