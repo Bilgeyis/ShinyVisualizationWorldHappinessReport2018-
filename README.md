@@ -4,12 +4,16 @@ This repository was created fully on R and displayed as an interactive applicati
 
 The present repository contains 6 files apart from this READ ME:
 
-
 •	Chapter2OnlineData.xls: Containing the information of the World Happiness Index Report
+
 •	dataprep.R: The R script with the data construction instructions
+
 •	happy2015.csv: A csv file containing the match of countries and regions
+
 •	melt.xls: A melted dataframe of the population to get a panel data format of the years
+
 •	server.R: The R file rendering and containing all functions to display on the Shinny app
+
 •	ui.R: The user input file that designs how the application will be displayed
 
 It is important to state that in the codes, you will be able to see a section containing a streamgraph, that is a type of graph that contains a bug as it is not yet available from the CRAN mirror in R. However, if managed manually on R it is possible to show this graph. 
